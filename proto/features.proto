@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+option go_package = "video_search_project/proto;proto";
+
+// Service for feature extraction
+service FeatureExtractor {
+  rpc ExtractFeatures(FeatureRequest) returns (FeatureResponse);
+}
+
+// Service for searching images across videos
+service FeatureSearcher {
+  rpc SearchImageAcrossVideos(SearchImageRequest) returns (SearchImageResponse);
+}
+
+// Message for feature extraction requests
+message FeatureRequest {
+  string video_path = 1;
+}
+
+// Message for feature extraction responses
+message FeatureResponse {
+  string status = 1;
+}
+
+// Message for image search requests
+message SearchImageRequest {
+  string image_path = 1;
+}
+
+// Message for image search responses
+message SearchImageResponse {
+  string video_path = 1;
+  float timestamp = 2;
+  float distance = 3;
+}

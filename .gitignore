@@ -19,3 +19,20 @@
 
 # Go workspace file
 go.work
+
+.env
+
+testing
+
+env
+
+videos
+uploaded_images
+learnings
+
+
+video_features.ann
+timestamps.npy
+combined_features.npy
+
+__pycache__
