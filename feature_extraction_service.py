@@ -135,7 +135,7 @@ def extract_features(image, model, device):
         features = model(img_tensor)  # Extract features
         features = features.view(-1)  # Flatten the features to a 1D tensor
     
-    print(f"features.size(0): {features.size(0)}")
+    # print(f"features.size(0): {features.size(0)}")
     assert features.size(0) == 2048, f"Error: Expected feature size of 2048, got {features.size(0)}"
     
     return features.cpu().numpy()
