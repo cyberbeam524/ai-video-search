@@ -2,13 +2,15 @@
 
 ### Overall Architecture of AI Powered Video Search Engine
 
+<img src="./img/arch.png" style="width:100%">
+
 Simply upload images and search the existing database for videos with possible image references. 
 
-<img src="./img/Component.png" style="width:100%">
+<img src="./img/Component.png" style="width:80%">
 
 ### Visualisations from site
 1. Search Page
-<img src="./img/search.png" style="width:100%">
+<img src="./img/search.png" style="width:80%">
 
 ## Installation Requirements:
 - Docker 
